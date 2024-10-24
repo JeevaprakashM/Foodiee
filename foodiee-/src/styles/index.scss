@@ -27,16 +27,32 @@ body {
 img{
   object-fit: cover;
 }
-.section.hero
+
+.section.improve-skills
 {
-  .gallery
-  {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:1.75vw;
-
-
+  .col.img{
+      img{
+      width:100%;
+     }
   }
+  .col.typography{
+      padding-left:1em;
+      .skill-item{
+        border-left: .2em solid var(--primary-color);
+      margin-bottom:.5em;
+      padding : .1em 0 .1em .5em;
+      color: var(--text-light);
+      font-weight: bold;
+
+
+    }
+    .btm
+    {
+      margin-top:.75em;
+
+    }
+  }
+ 
 }
 .main
 {
@@ -47,11 +63,14 @@ img{
 {
   display:flex;
   align-items: center;
+  margin-bottom:3vw;
+
   .title
   {
     color: var(--text-color);
     font-size: 3em;
     margin-bottom: .25em;
+    font-weight: 900;
   }
   .info{
     color: var(--text-light);
@@ -96,10 +115,11 @@ img{
 }
 
 .container {
-  padding-inline: 15vw;
+  padding-inline: 12vw;
 }
-@import "partials/_navbar.scss";
-@import "partials/_animation.scss";
+@import "partials/navbar.scss";
+@import "partials/animation.scss";
+@import "partials/hero-section.scss";
 @media screen and (max-width: 768px) {
   .navbar {
     .nav-links {
